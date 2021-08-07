@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 650px;
+    margin: 10px auto;
+    background-color: #ffff;
+    padding: 0 3%;
+    overflow: auto;
+    /* height: 100vw; */
+}
+
+/* styling the header */
+
+
+hgroup{
+    font-stretch: ultra-expanded;
+    text-align: center;
+}
+
+h1{
+    font-weight: 600;
+    padding-top: 1em;
+    font-size: calc(1rem + 2.5vw);
+    color: chartreuse;
+}
+
+h2{
+    font-weight: 600;
+    font-size: .5em;
+    /* text-transform: uppercase; */
+    margin-bottom: 2em;
+    padding: .1em;
+    font-stretch: wider;
+}
+
+/* styling the profile block */
+.profile{
+    margin: 1em 0;
+    display: flex;
+    padding:2em 0;
+    border-top : .2px solid black;
+    border-bottom: .2px solid black
+}
+
+img{
+    width: 20%;
+    align-self: flex-start; 
+    /* float: left; */
+    border-radius: 70px;
+    margin-right: 1em;
+}
+
+.section-title {
+    text-transform: uppercase;
+    /* margin-bottom: .5em; */
+    font-size: .95rem;
+    font-weight: 600;
+    padding: 1.5em 0;
+}
+
+/* styling section */
+
+
+/* utilities */
+.grid{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: 35% 65%;
+    grid-template-rows: auto auto auto;
+    gap: 5px; */
+
+}
+
+.col-1{
+    /* width: 20%; */
+    flex-basis: 20%;
+    flex-shrink: 1;
+    padding-right: 1em;
+    border-right: 1px solid black;
+}
+
+.content{
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+.col-2{
+    /* flex-shrink: 1; */
+    flex-basis: 70%;
+    padding-left: 1em;
+}
+
+ul.education{
+    margin-bottom: 1em;
+
+}
+
+.degree{
+    font-weight: 600
+}
+
+.job-title{
+        font-weight: 600;
+}
+.activity{
+    padding-bottom: 3em;
+}

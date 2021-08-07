@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'resume/css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <hgroup >
+            <h1>{{name}}</h1>
+            <h2>{{title}}</h2>
+        </hgroup>
+    </header>
+
+    <section class="profile">
+        {% load static %}
+        <img src="{%static 'resume/images/profile-pics.JPG' %}" alt="Professional picture">
+        <div class="profile-content">
+        <h3 class="section-title" style="padding: 0 0 1em 0;" >Profile</h3>
+        <p>Engineer with 3+ years of experience in building data-driven applications with JavaScript and Python.
+            Skilled in machine learning, data science, data engineering, cloud computing, product management and leading
+            teams.</p>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="col-1">
+        <div class="contact content">
+            <ul>
+                <li><h3 class="section-title">Contact</h3></li>
+                <li class="phoneno">0808777637154</li>
+                <li class="address">Lagos, Nigeria</li>
+                <li class="blog"><a href="#"></a></li>
+                <li class="linkedin"><a href="#" class="linkedin"></a></li>
+                <li class="mail">testuser@gmail.com</li>   
+            </ul>
+        </div>
+
+        <div class="education content">
+            <h3 class="section-title">Education</h3>
+                <ul class="education">
+                <li class="degree">B.Sc in Economics</li>
+                <li>London School of Economics, London</li>
+                <li>2013-2018</li>
+                </ul>
+
+                <ul class="education">
+                <li class="degree">B.Sc in Computer Science</li>
+                <li>University of Reading, Washington</li>
+                <li>2018-2021</li>
+                </ul>
+                
+        </div>
+
+        <div class="skills content" style="border: none;">
+            <h3 class="section-title">Skills</h3>
+            <ul>
+                <li>Data Visualization</li>
+                <li>Data Analysis</li>
+                <li>Machine Learning</li>
+                <li>Content Research and Writing</li>
+                <!-- <li>SQL</li> -->
+                <li>Database Design</li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="col-2">
+        <div class="experience content" >
+            <h3 class="section-title">Employment History</h3>
+            <dl  class="activity">
+                <dt class="job-title">Data Science Intern, Data Science Nigeria, Lagos, Nigeria</dt>
+                <dd>Researched and analyzed data to discover the pattern  and channels of customer acquisition</dd>
+                <dd>Built, maintained and deployed data analytic products</dd>
+                <dd>Actively involved in the deployment of machine learning models</dd>
+
+                <dt class="job-title">Research Analyst, Oiyk Technologies, Abuja, Nigeria</dt>
+                <dd>Wrote and analyzed content to gain traction</dd>
+                    <dd>Grew the Instagram page from 1k followership to 20k+ followership</dd>
+                </dl>
+        </div>
+
+        <div class="projects content">
+            <h3 class="section-title">Projects</h3>
+            <dl class="project">
+                <dt class="job-title">To Do List</dt>
+                <dd>This project is a simple web app intended to help users sort items on their to do List
+                    via location and tag.</dd>
+                <dd><a href="https://github/ene/todo">To do list Web app</a></dd>
+
+
+                    <dt class="job-title">Resume Builder</dt>
+                    <dd>This project is a simple web app intended to help users build their resumes using an easy to 
+                        follow form.</dd>
+                    <dd><a href="https://github/ene/todo">Resume builder</a></dd>
+
+
+            </dl>
+            
+        </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+    
